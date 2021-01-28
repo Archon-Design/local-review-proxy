@@ -15,16 +15,16 @@ app.use('/api/homeinfo', createProxyMiddleware({ target: 'http://localhost:3002'
 app.use('/api/homeimages', createProxyMiddleware({ target: 'http://localhost:3002', changeOrigin: true }));
 
 //Similar Carousel
-app.use('/api/homes/similar', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
-app.use('/api/homes/nearby', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
+app.use('/api/homes/similar', createProxyMiddleware({ target: 'http://ec2-54-67-71-60.us-west-1.compute.amazonaws.com:3001', changeOrigin: true }));
+app.use('/api/homes/nearby', createProxyMiddleware({ target: 'http://ec2-54-67-71-60.us-west-1.compute.amazonaws.com:3001', changeOrigin: true }));
 
 //Local Review
-app.use('/reviews', createProxyMiddleware({ target: 'http://localhost:3004', changeOrigin: true }));
-app.use('/features', createProxyMiddleware({ target: 'http://localhost:3004', changeOrigin: true }));
+app.use('/reviews', createProxyMiddleware({ target: 'http://ec2-13-52-76-182.us-west-1.compute.amazonaws.com:3004', changeOrigin: true }));
+app.use('/features', createProxyMiddleware({ target: 'http://ec2-13-52-76-182.us-west-1.compute.amazonaws.com:3004', changeOrigin: true }));
 
 //Calculator
-app.use('/mortgages', createProxyMiddleware({ target: 'http://localhost:3003', changeOrigin: true }));
-app.use('/homes', createProxyMiddleware({ target: 'http://localhost:3003', changeOrigin: true }));
+app.use('/mortgages', createProxyMiddleware({ target: 'http://ec2-3-135-210-129.us-east-2.compute.amazonaws.com:3003', changeOrigin: true }));
+app.use('/homes', createProxyMiddleware({ target: 'http://ec2-3-135-210-129.us-east-2.compute.amazonaws.com:3003', changeOrigin: true }));
 
 
 app.listen(3000, () => {console.log('Proxy listening on Port http://localhost:3000'); });
