@@ -1,0 +1,27 @@
+{
+  "name": "local-review-proxy-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Archon-Design/local-review-proxy-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Archon-Design/local-review-proxy-server/issues"
+  },
+  "homepage": "https://github.com/Archon-Design/local-review-proxy-server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.6",
+    "nodemon": "^2.0.7"
+  }
+}
