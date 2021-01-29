@@ -23,7 +23,7 @@ app.use('/reviews', createProxyMiddleware({ target: 'http://ec2-13-52-76-182.us-
 app.use('/features', createProxyMiddleware({ target: 'http://ec2-13-52-76-182.us-west-1.compute.amazonaws.com:3004', changeOrigin: true }));
 
 //Calculator
-app.use('/mortgages', createProxyMiddleware({ target: 'http://ec2-3-135-210-129.us-east-2.compute.amazonaws.com:3003', changeOrigin: true }));
+app.use('/mortgage', createProxyMiddleware({ target: 'http://ec2-3-135-210-129.us-east-2.compute.amazonaws.com:3003', changeOrigin: true }));
 app.use('/homes', createProxyMiddleware({ target: 'http://ec2-3-135-210-129.us-east-2.compute.amazonaws.com:3003', changeOrigin: true }));
 
 app.listen(3000, () => {console.log('Proxy listening on Port http://localhost:3000'); });
